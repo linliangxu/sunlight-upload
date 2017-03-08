@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Sunlight Upload Plugin</title>
+	<link rel="stylesheet" href="../css/reset.css" type="text/css">
+	<link rel="stylesheet" href="../css/sunlight-upload.css" type="text/css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="../sunlight-upload.js"></script>
+	<style type="text/css">
+	body {padding:0;margin: 0;}
+	h1 {font-size: 50px;	margin-bottom:40px; background: #000; color: #fff; padding: 30px;}
+	.xuUploadBox {margin:0 50px;}
+	</style>
+</head>
+<body>
+	<h1>jQuery Sunlight Upload Plugin</h1>
+	<div class="xuUploadBox">
+		<div class="xuTitle">
+			<form action="handle.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" id="xuUpload" multiple>
+				<!-- <input type="submit" value="提交"> -->
+			</form>
+		</div>
+		<div id="xuShowArea"></div>
+		<div class="xuBottom">
+			<div class="xuButton">
+				<span id="xuSubmit" type="submit">Upload</span>
+				<!-- <input type="submit" value="提交" id="xuSubmit"> -->
+				<span id="xuClear" type="reset">Clear</span>
+			</div>
+		</div>
+	</div>
+	<script>
+		jQuery(function ($) {
+			$('#xuUpload').sunlightUpload({limit: false, display: true, showArea: '#xuShowArea'});
+		});
+	</script>
+</body>
+</html>

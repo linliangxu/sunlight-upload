@@ -1,0 +1,82 @@
+
+.xuUploadBox li {
+	list-style: none;
+}
+
+.xuUploadBox {
+	font-family: 微软雅黑,'Helvetica Neue',Tahoma;
+	border: 1px solid #CCC;
+	width: 500px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px #CCC;
+}
+
+.xuUploadBox .xuTitle,
+.xuUploadBox .xuBottom {
+	height: 40px;
+	padding: 15px 15px 0px;
+	 background: #F5F5F0;
+}
+.xuButton {
+	float: right;
+}
+#xuShowArea {
+	background: #FFF;
+	min-height: 200px;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+
+.xuSelectFile,
+#xuSubmit,
+#xuClear {
+	border: 1px solid #999;
+	border-radius: 3px;
+	padding: 5px 15px;
+	background: #DDD;
+	font-size: 16px;
+	cursor: pointer;
+}
+.xuFileItem {
+	border-bottom:1px solid #CCC;
+	margin: 0 10px;
+	padding: 10px; 
+	overflow: hidden;
+}
+.xuName {
+	display: inline-block;
+	width: 340px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis; /*--4 opera--*/
+	text-overflow: ellipsis;
+}
+.xuHandle {
+	float: right;
+}
+.xuHandle li {
+	float: left;
+	margin-left: 10px;
+}
+.xuProgress {
+	padding-top: 7px;
+}
+.xuProgressBar {
+	float: left;
+	width: 80%;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 3px;
+	overflow: hidden;
+}
+.xuProgressBar div {
+	background: url(../images/progress_1.gif) repeat;
+	height: 15px;
+}
+.xuPercentage {
+	float: left;
+	width: 30px;
+	margin-left: 20px;
+}
+
+
